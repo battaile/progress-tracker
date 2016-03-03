@@ -1,9 +1,9 @@
 **To run locally in browser:**
 
-'''
+```
 npm install http-server
 http-server -o
-'''
+```
 
 **Thank you to:**
 - [jarsbe's react-simple](https://github.com/jarsbe/react-simple) 

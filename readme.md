@@ -1,3 +1,5 @@
+Simple react app that I'm going to use to replace a spreadsheet i keep recreating.  Also wanted to try going sans webpack.
+
 **To run locally in browser:**
 
 ```

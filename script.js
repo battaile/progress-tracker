@@ -23,10 +23,10 @@ class ProgressTracker extends React.Component {
 	};
 	render() {
 		return <div className="row" > 
-			<div className="col-xs-3"> {this.props.category} </div>
-			<div className="col-xs-3"> < input type="text" value={this.state.actual} onChange={this.handleActualChange.bind(this)} / > </div>
-			<div className="col-xs-3"> < input type="text" value={this.state.targetVal} onChange={this.handleTargetChange.bind(this)} / > </div>
-		 	<div className="col-xs-3"> {this.state.targetVal > 0 ? this.state.actual/this.state.targetVal : 0} </div>
+			<div className="col-sm-3"> {this.props.category} </div>
+			<div className="col-sm-3"> < input type="text" value={this.state.actual} onChange={this.handleActualChange.bind(this)} / > </div>
+			<div className="col-sm-3"> < input type="text" value={this.state.targetVal} onChange={this.handleTargetChange.bind(this)} / > </div>
+		 	<div className="col-sm-3"> {this.state.targetVal > 0 ? this.state.actual/this.state.targetVal : 0} </div>
 		 < /div>
 	}
 }

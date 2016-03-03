@@ -1,6 +1,6 @@
 class App extends React.Component {
 	render() {
-		return  <div><ProgressTracker category="Dev" targetVal="32"/ >
+		return  <div className="container"><ProgressTracker category="Dev" targetVal="32"/ >
 		 <ProgressTracker category="BJJ" targetVal="18"/ >
 		 <ProgressTracker category="Guitar" targetVal="7"/ >
 		 <ProgressTracker category="Spanish" targetVal="3"/ ></div>
@@ -22,9 +22,12 @@ class ProgressTracker extends React.Component {
 		this.setState({targetVal: event.target.value});
 	};
 	render() {
-		return <p > {this.props.category} < input type="text" value={this.state.actual} onChange={this.handleActualChange.bind(this)} / > 
-					< input type="text" value={this.state.targetVal} onChange={this.handleTargetChange.bind(this)} / > 
-		 {this.state.targetVal > 0 ? this.state.actual/this.state.targetVal : 0} < /p>
+		return <div className="row" > 
+			<div className="col-xs-3"> {this.props.category} </div>
+			<div className="col-xs-3"> < input type="text" value={this.state.actual} onChange={this.handleActualChange.bind(this)} / > </div>
+			<div className="col-xs-3"> < input type="text" value={this.state.targetVal} onChange={this.handleTargetChange.bind(this)} / > </div>
+		 	<div className="col-xs-3"> {this.state.targetVal > 0 ? this.state.actual/this.state.targetVal : 0} </div>
+		 < /div>
 	}
 }
 
